@@ -17,8 +17,8 @@ Tracking my contributions to open source projects, primarily in the Apache Fluss
 ## Contribution Stats
 
 - **Projects:** Apache Fluss, Fluss Rust Client
-- **Total PRs:** 12
-- **Merged PRs:** 5
+- **Total PRs:** 13
+- **Merged PRs:** 6
 - **Open PRs:** 7
 
 > 📦 Credited contributor in the official 
@@ -60,7 +60,7 @@ The tables below track my pull requests and contributions across these repositor
 
 Repository: [apache/fluss](https://github.com/apache/fluss)
 
-Contributions to the Fluss core project including documentation tooling, tutorials, and improvements to developer experience.
+Contributions to the Fluss core project including documentation tooling, tutorials, Testing and improvements to developer experience.
 
 | PR | Status | Area | Description |
 |----|--------|------|-------------|
@@ -73,6 +73,7 @@ Contributions to the Fluss core project including documentation tooling, tutoria
 | [#2588](https://github.com/apache/fluss/pull/2588) | Open | Docs / Tooling | Refined `ConfigOptionsDocGenerator` to improve MDX output by switching from table to list format, fixing type rendering, improving description formatting, and enhancing configuration scope detection |
 | [#2461](https://github.com/apache/fluss/pull/2461) | Open | Documentation | Added comprehensive documentation for the Fluss Python client, including installation, Admin API, Table API, and examples integrating PyArrow and Pandas |
 | [#2462](https://github.com/apache/fluss/pull/2462) | Open | Documentation | Added Rust client documentation with async examples using Tokio, Admin/Table API usage, and type mapping between Fluss and Rust types |
+| [#2864](https://github.com/apache/fluss/pull/2864) | Open | Flink / Testing | Fixed `OutOfMemoryError` during `TaskManager` startup in `FlinkMetricsITCase` by improving `MiniCluster` cleanup and reducing `NetworkBufferPool` memory pressure in integration tests |
 
 
 
@@ -87,7 +88,7 @@ Contributions to the Rust client improving API usability and integration with da
 | PR | Status | Area | Description |
 |----|--------|------|-------------|
 | [#371](https://github.com/apache/fluss-rust/pull/371) | Merged | Client / Configuration | Made writer batch timeout configurable by introducing `writer_batch_timeout_ms`, wiring it across Rust, Python, and C++ bindings, and updating documentation |
-| [#417](https://github.com/apache/fluss-rust/pull/417) | Open | Client / Configuration | Made LogScanner fetch parameters configurable (max/min bytes and max wait time), replacing hardcoded constants and wiring configuration across Rust, Python, and C++ bindings |
+| [#417](https://github.com/apache/fluss-rust/pull/417) | Merged | Client / Configuration | Made LogScanner fetch parameters configurable (max/min bytes and max wait time), replacing hardcoded constants and wiring configuration across Rust, Python, and C++ bindings |
 | [#411](https://github.com/apache/fluss-rust/pull/411) | Open | Client / Arrow Integration | Added `LookupResult::to_record_batch()` to expose lookup results as an Apache Arrow `RecordBatch`, enabling integration with Arrow-based engines like DataFusion |
 
 
@@ -96,6 +97,6 @@ Contributions to the Rust client improving API usability and integration with da
 ## Active Proposal
 
 ### Native BITMAP Integration & Stateless Pushdown Aggregation
-- Submitted formal [DISCUSS] thread to dev@fluss.apache.org (March 2026)
+- Submitted formal [DISCUSS](https://lists.apache.org/thread/z9dwyg81cs3bt7yssb4n3vg17o767r5s) thread to dev@fluss.apache.org (March 2026)
 - Full proposal: [Google Doc](https://docs.google.com/document/d/1sDhfkmo-w-UTvo2n3rsY1lytSSryswfkI83cSdka8s0/edit?usp=sharing)
 - Scope: End-to-end BITMAP type support in Fluss — BitmapType, UDF suite, and server-side pushdown via AggregationMergeEngine
