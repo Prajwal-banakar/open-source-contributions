@@ -17,9 +17,9 @@ Tracking my contributions to open source projects, primarily in the Apache Fluss
 ## Contribution Stats
 
 - **Projects:** Apache Fluss, Fluss Rust Client
-- **Total PRs:** 13
+- **Total PRs:** 14
 - **Merged PRs:** 7
-- **Open PRs:** 6
+- **Open PRs:** 7
 
 > 📦 Credited contributor in the official 
 > [Apache Fluss v0.9.0-incubating release](https://github.com/apache/fluss/releases/tag/v0.9.0-incubating)
@@ -29,7 +29,7 @@ Tracking my contributions to open source projects, primarily in the Apache Fluss
 
 I am **Prajwal Banakar**, a 4th-year **Information Science & Engineering (B.E.)** student with a strong interest in **distributed systems, real-time data infrastructure, and backend engineering**.
 
-I am a credited contributor to **Apache Fluss (Incubating)** with 5 merged PRs across the **v0.9.0 release**. My contributions focus on improving the Fluss ecosystem through documentation tooling, client development, system integration, and developer experience improvements.
+I am a credited contributor to **Apache Fluss (Incubating)** with 5 merged PRs across the **v0.9.0 release**. My Contributions to the Fluss core project including documentation tooling, testing, client improvements, and developer experience enhancements.
 
 I enjoy working on systems that operate at scale and exploring technologies related to **stream processing, storage engines, and data infrastructure**.
 
@@ -74,6 +74,7 @@ Contributions to the Fluss core project including documentation tooling, tutoria
 | [#2461](https://github.com/apache/fluss/pull/2461) | Open | Documentation | Added comprehensive documentation for the Fluss Python client, including installation, Admin API, Table API, and examples integrating PyArrow and Pandas |
 | [#2462](https://github.com/apache/fluss/pull/2462) | Open | Documentation | Added Rust client documentation with async examples using Tokio, Admin/Table API usage, and type mapping between Fluss and Rust types |
 | [#2864](https://github.com/apache/fluss/pull/2864) | Open | Flink / Testing | Fixed `OutOfMemoryError` during `TaskManager` startup in `FlinkMetricsITCase` by improving `MiniCluster` cleanup and reducing `NetworkBufferPool` memory pressure in integration tests |
+| [#2907](https://github.com/apache/fluss/pull/2907) | Open | Client / Bug Fix | Fixed deadlock in async `insertIfNotExists` lookups by deduplicating identical keys within the same `LookupBatch` and chaining duplicate futures to the first request |
 
 
 
@@ -100,3 +101,4 @@ Contributions to the Rust client improving API usability and integration with da
 - Submitted formal [DISCUSS](https://lists.apache.org/thread/z9dwyg81cs3bt7yssb4n3vg17o767r5s) thread to dev@fluss.apache.org (March 2026)
 - Full proposal: [Google Doc](https://docs.google.com/document/d/1sDhfkmo-w-UTvo2n3rsY1lytSSryswfkI83cSdka8s0/edit?usp=sharing)
 - Scope: End-to-end BITMAP type support in Fluss — BitmapType, UDF suite, and server-side pushdown via AggregationMergeEngine
+
