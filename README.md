@@ -17,9 +17,9 @@ Tracking my contributions to open source projects, primarily in the Apache Fluss
 ## Contribution Stats
 
 - **Projects:** Apache Fluss, Fluss Rust Client
-- **Total PRs:** 14
+- **Total PRs:** 15
 - **Merged PRs:** 7
-- **Open PRs:** 7
+- **Open PRs:** 8
 
 > 📦 Credited contributor in the official 
 > [Apache Fluss v0.9.0-incubating release](https://github.com/apache/fluss/releases/tag/v0.9.0-incubating)
@@ -91,6 +91,7 @@ Contributions to the Rust client improving API usability and integration with da
 | [#371](https://github.com/apache/fluss-rust/pull/371) | Merged | Client / Configuration | Made writer batch timeout configurable by introducing `writer_batch_timeout_ms`, wiring it across Rust, Python, and C++ bindings, and updating documentation |
 | [#417](https://github.com/apache/fluss-rust/pull/417) | Merged | Client / Configuration | Made LogScanner fetch parameters configurable (max/min bytes and max wait time), replacing hardcoded constants and wiring configuration across Rust, Python, and C++ bindings |
 | [#411](https://github.com/apache/fluss-rust/pull/411) | Merged | Client / Arrow Integration | Added `LookupResult::to_record_batch()` to expose lookup results as an Apache Arrow `RecordBatch`, enabling integration with Arrow-based engines like DataFusion |
+| [#449](https://github.com/apache/fluss-rust/pull/449) | Open | Client / Validation | Added validation for numeric configuration fields in `Config`, ensuring safe defaults and preventing invalid values during `FlussConnection` initialization |
 
 
 ---
