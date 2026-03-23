@@ -18,8 +18,8 @@ Tracking my contributions to open source projects, primarily in the Apache Fluss
 
 - **Projects:** Apache Fluss, Fluss Rust Client
 - **Total PRs:** 15
-- **Merged PRs:** 7
-- **Open PRs:** 8
+- **Merged PRs:** 9
+- **Open PRs:** 6
 
 > 📦 Credited contributor in the official 
 > [Apache Fluss v0.9.0-incubating release](https://github.com/apache/fluss/releases/tag/v0.9.0-incubating)
@@ -71,8 +71,8 @@ Contributions to the Fluss core project including documentation tooling, tutoria
 | [#2416](https://github.com/apache/fluss/pull/2416) | Merged | Coordinator / Refactoring | Refactored `SchemaUpdate` to delegate schema membership management (columns, primary keys, auto-increment fields) to `Schema.Builder`, improving maintainability and ensuring a single source of truth for schema evolution |
 | [#2474](https://github.com/apache/fluss/pull/2474) | Merged | Docs / Tooling | Introduced the `fluss-docgen` module to automate configuration documentation generation from `ConfigOptions`, producing MDX output to reduce documentation drift and improve maintainability |
 | [#2588](https://github.com/apache/fluss/pull/2588) | Open | Docs / Tooling | Refined `ConfigOptionsDocGenerator` to improve MDX output by switching from table to list format, fixing type rendering, improving description formatting, and enhancing configuration scope detection |
-| [#2461](https://github.com/apache/fluss/pull/2461) | Open | Documentation | Added comprehensive documentation for the Fluss Python client, including installation, Admin API, Table API, and examples integrating PyArrow and Pandas |
-| [#2462](https://github.com/apache/fluss/pull/2462) | Open | Documentation | Added Rust client documentation with async examples using Tokio, Admin/Table API usage, and type mapping between Fluss and Rust types |
+| [#2461](https://github.com/apache/fluss/pull/2461) | Merged | Documentation | Added comprehensive documentation for the Fluss Python client, including installation, Admin API, Table API, and examples integrating PyArrow and Pandas |
+| [#2462](https://github.com/apache/fluss/pull/2462) | Merged | Documentation | Added Rust client documentation with async examples using Tokio, Admin/Table API usage, and type mapping between Fluss and Rust types |
 | [#2864](https://github.com/apache/fluss/pull/2864) | Open | Flink / Testing | Fixed `OutOfMemoryError` during `TaskManager` startup in `FlinkMetricsITCase` by improving `MiniCluster` cleanup and reducing `NetworkBufferPool` memory pressure in integration tests |
 | [#2907](https://github.com/apache/fluss/pull/2907) | Open | Client / Bug Fix | Fixed deadlock in async `insertIfNotExists` lookups by deduplicating identical keys within the same `LookupBatch` and chaining duplicate futures to the first request |
 
