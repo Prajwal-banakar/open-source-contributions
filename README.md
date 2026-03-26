@@ -17,9 +17,9 @@ Tracking my contributions to open source projects, primarily in the Apache Fluss
 ## Contribution Stats
 
 - **Projects:** Apache Fluss, Fluss Rust Client
-- **Total PRs:** 15
+- **Total PRs:** 16
 - **Merged PRs:** 9
-- **Open PRs:** 6
+- **Open PRs:** 7
 
 > 📦 Credited contributor in the official 
 > [Apache Fluss v0.9.0-incubating release](https://github.com/apache/fluss/releases/tag/v0.9.0-incubating)
@@ -73,6 +73,7 @@ Contributions to the Fluss core project including documentation tooling, tutoria
 | [#2588](https://github.com/apache/fluss/pull/2588) | Open | Docs / Tooling | Refined `ConfigOptionsDocGenerator` to improve MDX output by switching from table to list format, fixing type rendering, improving description formatting, and enhancing configuration scope detection |
 | [#2461](https://github.com/apache/fluss/pull/2461) | Merged | Documentation | Added comprehensive documentation for the Fluss Python client, including installation, Admin API, Table API, and examples integrating PyArrow and Pandas |
 | [#2462](https://github.com/apache/fluss/pull/2462) | Merged | Documentation | Added Rust client documentation with async examples using Tokio, Admin/Table API usage, and type mapping between Fluss and Rust types |
+| [#2923](https://github.com/apache/fluss/pull/2923) | Open | Documentation | Added C++ client documentation including installation, usage example, and integration with the client support matrix |
 | [#2864](https://github.com/apache/fluss/pull/2864) | Open | Flink / Testing | Fixed `OutOfMemoryError` during `TaskManager` startup in `FlinkMetricsITCase` by improving `MiniCluster` cleanup and reducing `NetworkBufferPool` memory pressure in integration tests |
 | [#2907](https://github.com/apache/fluss/pull/2907) | Open | Client / Bug Fix | Fixed deadlock in async `insertIfNotExists` lookups by deduplicating identical keys within the same `LookupBatch` and chaining duplicate futures to the first request |
 
